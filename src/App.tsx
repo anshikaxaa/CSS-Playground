@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CodeSnippet } from './types';
 import { saveSnippet, getSnippets, deleteSnippet, generateId } from './utils/storage';
 import CodeEditor from './components/CodeEditor';
@@ -11,8 +11,7 @@ import {
   RotateCcw, 
   Play, 
   Pause,
-  Download,
-  Upload
+  Download
 } from 'lucide-react';
 
 const defaultHTML = `<!DOCTYPE html>
@@ -216,7 +215,6 @@ function App() {
                 onChange={setHtml}
                 placeholder="Enter your HTML code here..."
                 language="html"
-                autoUpdate={autoUpdate}
               />
             </div>
 
@@ -232,7 +230,6 @@ function App() {
                 onChange={setCSS}
                 placeholder="Enter your CSS code here..."
                 language="css"
-                autoUpdate={autoUpdate}
               />
             </div>
           </div>

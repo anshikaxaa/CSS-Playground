@@ -12,7 +12,6 @@ export interface EditorProps {
   onChange: (value: string) => void;
   placeholder: string;
   language: 'html' | 'css';
-  autoUpdate: boolean;
 }
 
 export interface PreviewProps {

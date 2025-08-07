@@ -46,6 +46,17 @@ A real-time HTML and CSS editor with live preview, inspired by CodePen and JSFid
 4. **Open your browser**
    Navigate to `http://localhost:3000`
 
+### Production Build
+
+To test the production build locally:
+
+```bash
+npm run build
+npm run serve
+```
+
+Then visit `http://localhost:3000`
+
 ## 🛠️ Tech Stack
 
 | Purpose | Technology |
@@ -131,13 +142,33 @@ Enhance the `CodeEditor` component to add:
 - Safari
 - Edge
 
-## 🤝 Contributing
+## 🚀 Deployment
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+### GitHub Pages (Automatic)
+
+The app is configured to automatically deploy to GitHub Pages when you push to the main branch. The GitHub Actions workflow will:
+
+1. Build the production version
+2. Deploy to GitHub Pages
+3. Make it available at `https://yourusername.github.io/your-repo-name`
+
+### Manual Deployment
+
+You can also deploy to other platforms:
+
+#### Vercel
+```bash
+npm install -g vercel
+vercel
+```
+
+#### Netlify
+```bash
+npm run build
+# Drag the dist folder to Netlify
+```
+
+## 🤝 Contributing
 
 ## 📄 License
 

@@ -5,8 +5,7 @@ const CodeEditor: React.FC<EditorProps> = ({
   value, 
   onChange, 
   placeholder, 
-  language, 
-  autoUpdate 
+  language 
 }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [lineNumbers, setLineNumbers] = useState<string[]>([]);
