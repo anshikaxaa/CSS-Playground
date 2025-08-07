@@ -183,4 +183,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Happy Coding! 🚀** 
+**Happy Coding! 🚀**
+
+---
+*Last updated: $(Get-Date)* 
